@@ -1,0 +1,24 @@
+section.related {
+	background: #ededed;
+	width: 100%;
+	margin-left: none !important;
+	padding: 2em 10em;
+}
+
+section.related article {
+	transform: none;
+}
+
+section.related article:hover {
+	transform: none;
+}
+
+main {
+	width: 100%;
+}
+
+@media screen and (max-width: 60em) {
+	section.related {
+		padding: 0;
+	}
+}

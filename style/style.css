@@ -1,0 +1,347 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: helvetica;
+	overflow-x: hidden;
+}
+
+p, h1, h2, h3, h4, h5, h6, img {
+	padding-bottom: 1em;
+}
+
+h2, h3 {
+	text-shadow: 3px 3px 0px rgba(150, 150, 150, 0.4);
+}
+
+a {
+	color: black;
+}
+
+ul, ol {
+	margin-left: 1.3em;
+}
+
+/*HEADER*/
+body > header img {
+	width: 12em;
+	float: right;
+}
+
+body > header {
+	background: #ededed;
+	padding: 2em 10em;
+}
+
+body > header nav ul {
+	margin: 2em 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body > header nav ul li {
+	list-style: none;
+	display: inline-flex;
+	flex-derection: row;
+}
+
+body > header nav ul li a {
+	background: #ffcc00;
+	padding: 1em;
+	text-decoration: none;
+	color: black;
+	border-radius: 0.4em;
+	margin-right: 0.2em;
+	transition: transform 0.2s;
+}
+
+body > header nav ul li a:hover {
+	transform: scale(1.05);
+}
+
+
+body > header p.to-profile {
+	padding: 1em 1em 1em 0;
+	display: inline-block;
+}
+
+body > header form[action="Formulierpagina.html"] {
+	float: right;
+}
+	
+body > header form[action="Formulierpagina.html"] input {
+	border: none;
+	padding: 1em;
+	font-size: 1em;
+	margin-left: 1em;
+}
+
+body > header form[action="Formulierpagina.html"] button {
+	height: 3.1em;
+	font-size: 1em;
+	background: white;
+	border: none;
+	padding: 1em;
+}
+
+/*MAIN*/
+main {
+	width: 70%;
+	padding: 3em 10em;
+	float: left;
+}
+
+main h2 + p {
+	font-style: italic;
+}
+
+/*OVERIG*/
+section.related {
+	float: left;
+	width: 25%;
+}
+
+section.related h2 {
+	padding: 1em 0 2em;
+	text-align: center;
+}
+
+section.related article {
+	background: #ededed;
+	padding: 2em;
+	transform: skew(5deg);
+	transition: transform 0.2s;
+}
+
+section.related article:hover {
+	transform: translateX(-1.62em) skew(5deg);
+	transition: transform 0.2s;
+}
+
+section.related article h3, section.related article p {
+	transform: skew(-5deg);
+}
+
+section.related article:nth-child(2n) {
+	background: #ffcc00;
+}
+
+
+
+aside {
+	padding: 2em 10em;
+	clear: both;
+	background: #ededed;
+}
+
+aside h2 {
+	text-align: center;
+}
+
+aside section { 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+aside section article { 
+	flex-basis: 17em;
+	padding: 2em;
+	background: #ffcc00;
+	margin: 1em;
+	box-shadow: 1em 1em 0px 0px rgba(50, 50, 50, 0.2);
+	transition: box-shadow 0.3s;
+}
+
+aside section article:hover { 
+	box-shadow: 0.4em 0.4em 0px 0px rgba(50, 50, 50, 0.2);
+	transition: box-shadow 0.3s;
+}
+
+
+aside section h2 { 
+	flex-basis: 100%;
+	margin-top: 1em;
+}
+
+	/*FORMULIER*/
+
+main form fieldset {
+	padding: 2em;
+	margin: 1em 0;
+	border: 1px solid black;
+	border-radius: 0.4em;
+} 
+
+main form fieldset textarea {
+	height: 10em;
+}
+
+main form fieldset input[type='text'], main form fieldset input[type='tel'],main form fieldset input[type='email'], main form fieldset input[type='date'] {
+	padding: 0.5em;
+	font-size: 1.2em;
+} 
+
+main form fieldset input[type='radio'], main form fieldset input[type='checkbox'] {
+	display: inline;
+	width: 2em;
+}
+
+main form fieldset:nth-child(2) label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+main form fieldset em {
+	width: 10%;
+	color: red;
+}
+
+main form fieldset span {
+	display: block;
+	padding: 1em 0;
+}
+
+main form fieldset input, main form fieldset textarea{
+	display: inline-block;
+	width: 80%;
+} 
+
+main form input[type="submit"] {
+	border: 1px solid black;
+	padding: 1em;
+	font-size: 1em;
+	background: none;
+	border-radius: 0.4em;
+}
+
+main form input[type="submit"]:hover {
+	background: #ededed;
+}
+
+main img {
+	width: 100%;
+}
+
+main video {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+/*FOOTER*/
+body > footer {
+	padding: 2em 10em;
+	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	background: orange;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+body > footer section, body > footer > p {
+	flex-basis: 17em;
+	background: #ededed;
+	padding: 2em;
+	margin: 1em;
+}
+
+#sitemap{
+	order: -2;
+}
+
+#contact {
+	order: -5;
+}
+
+#search {
+	order: -0;
+}
+
+#about {
+	order: -4;
+}
+
+#credits {
+	order: -1;
+}
+
+
+
+@media screen and (max-width: 68em) {
+	section.related article {
+		background: #ededed;
+		padding: 2em;
+		transform: skew(0deg);
+		transition: transform 0.2s;
+	}
+
+	section.related article:hover {
+		transform: translateX(0) skew(0deg);
+		transition: transform 0.2s;
+	}
+
+	section.related article h3, section.related article p {
+		transform: skew(0deg);
+	}		
+
+	section.related {
+		margin-left: 0;
+		width: 30%;
+		background: #ededed;
+	}
+
+	body > header nav ul {
+	justify-content: center;
+	}
+
+	body > header nav ul li a {
+		width: 15em;
+		margin-bottom: 1em;
+	}
+}
+
+
+@media screen and (max-width: 60em) {
+	section.related {
+		width: 100%;
+	}	
+
+	main, body > header, aside, section.related, body > footer {
+		width: 100%;
+		padding: 2em;
+	}
+
+	body > header form[action="Formulierpagina.html"] {
+	float: right;
+	}
+		
+	body > header form[action="Formulierpagina.html"] input {
+		padding: 0.5em;
+	}
+
+	body > header form[action="Formulierpagina.html"] button {
+		height: auto;
+		padding: 0.5em;
+	}
+}
+
+@media screen and (max-width: 47em) {
+	body > footer section, aside section article {
+		flex-basis: 100%;
+	}
+
+	body > header img {
+		width: 100%;
+	}
+}
+
+.hidden {
+	display: none;
+}
